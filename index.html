@@ -6,7 +6,7 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
     <div id="app">
@@ -19,6 +19,8 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <p v-if = "InStock">In Stock</p>
+            <p v-else>Out of Stock</p>
           </div>
         </div>
       </div>
